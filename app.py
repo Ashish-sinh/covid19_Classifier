@@ -11,7 +11,7 @@ from  streamlit_image_select import image_select
 warnings.filterwarnings('ignore') 
 
 
-model = tf.keras.models.load_model('X-ray_classifier.h5')
+model = tf.keras.models.load_model('model_training/X-ray_classifier.h5')
 st.set_page_config(
     page_title= 'Covid 19 Detection by X-ray Images', 
     page_icon='😷' , 
@@ -50,7 +50,7 @@ def prediction_cls(prediction) :
 
 
 with st.sidebar: 
-    st.image('covid.jpeg')
+    st.image('images/covid.jpeg')
     st.title('Covid🦠19 Detector🔍') 
     st.subheader("Instantly discern COVID-19 status from uploaded images! 📸 Reliable classification of positive or negative cases aids swift identification.")
     st.write('Covid-19 Detection by uploading Image')
@@ -70,7 +70,7 @@ def import_and_predict(data , model) :
 if file is None : 
     st.text('Please Upload Image File') 
     st.subheader('Sample Images') 
-    images  = ['pos.jpeg','negetive.jpeg']
+    images  = ['images/pos.jpeg','images/negetive.jpeg']
     selected_img = image_select('1.Positive , 2.Negative',images , key ='click_images')
     prediction = import_and_predict(selected_img , model)
     if st.button('Predict') : 
