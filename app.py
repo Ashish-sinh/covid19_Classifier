@@ -31,7 +31,7 @@ st.title('😷 Covid-19 Detection from X-Ray 🩻 Images...')
 
 
 def predict_result(prediction) : 
-    class_name = ['Covid-19 Negetive' , 'Covid-19 Positive'] 
+    class_name = ['Covid-19 Negative' , 'Covid-19 Positive'] 
     string = 'from Uploaded X-ray Image we estimate that you are :'+ class_name[prediction] 
     if prediction == 0 :  
         st.balloons() 
@@ -71,7 +71,7 @@ if file is None :
     st.text('Please Upload Image File') 
     st.subheader('Sample Images') 
     images  = ['pos.jpeg','negetive.jpeg']
-    selected_img = image_select('1.Positive , 2.Negetive',images , key ='click_images')
+    selected_img = image_select('1.Positive , 2.Negative',images , key ='click_images')
     prediction = import_and_predict(selected_img , model)
     if st.button('Predict') : 
         st.image(selected_img) 
