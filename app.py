@@ -11,7 +11,7 @@ from  streamlit_image_select import image_select
 warnings.filterwarnings('ignore') 
 
 
-model = tf.keras.models.load_model('model_training/X-ray_classifier.h5')
+model = tf.keras.models.load_model('/model_training/X-ray_classifier.h5')
 st.set_page_config(
     page_title= 'Covid 19 Detection by X-ray Images', 
     page_icon='😷' , 
