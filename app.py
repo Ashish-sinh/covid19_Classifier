@@ -54,7 +54,7 @@ with st.sidebar:
     st.title('Covid🦠19 Detector🔍') 
     st.subheader("Instantly discern COVID-19 status from uploaded images! 📸 Reliable classification of positive or negative cases aids swift identification.")
     st.write('Covid-19 Detection by uploading Image')
-    #st.link_button('Github Source-Code' , url= 'https://github.com/Ashish-sinh/covid19_Classifier/tree/main') 
+    st.link_button('Github Source-Code' , url= 'https://github.com/Ashish-sinh/covid19_Classifier/tree/main') 
 
 
 file = st.file_uploader('Upload X-ray Image',type = ['jpeg','jpg','png']) 
