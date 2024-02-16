@@ -11,6 +11,10 @@ The repository contains:
 - **Pre-trained Model:** Pre-trained deep learning model weights for quick inference.
 - **Requirements.txt:** List of dependencies to install the required packages.
 
+## Working Dempo 
+
+Please visit this site : https://covid19classifier.streamlit.app/
+
 ## Getting Started
 
 To get started with the project, follow these steps:
@@ -31,8 +35,3 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
-
-
-## Working Dempo 
-
-Please visit this site : https://covid19classifier.streamlit.app/
